@@ -58,3 +58,170 @@ void main(){
 }
 
 
+
+
+prime or not 
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+   int N=91;
+   int flag=0;
+   for(int i=0;i<N/2;i++){
+       if(N%2 == 0){
+           flag=1;
+           break;
+       }
+   }
+   if(flag == 0){
+       printf("its is prime");
+   }
+  else{
+      printf("its is not prime");
+  }
+    return 0;
+}
+
+
+//compound interested
+#include <stdio.h>
+#include <math.h>
+int main() {
+    // Write C code here
+    double principal=23000;
+    double rate=7;
+  
+    double time=4;
+      double amount=principal *((pow((1+rate/100),time)));
+      double CI=amount+principal;
+      printf("The compound interest is :%1f",CI);
+    return 0;
+}
+
+
+
+swapping 
+
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+   int x =10;int y=20;
+ printf("x: %d , y: %d\n", x, y); 
+   x=x+y;
+   y=x-y;
+   x=x-y;
+ printf("x: %d , y: %d\n", x, y); 
+   
+    return 0;
+}
+
+replace 0's into 1's
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int N=102301;
+  int i=0;
+  int ans=0;
+  while(N!=0){
+      if(N%10==0)
+         ans = ans + 1 * pow(10, i); 
+        else
+            ans = ans + (N % 10) * pow(10, i); 
+      N=N/10;
+      i++;
+  }
+  printf("%d",ans);
+  
+   
+    return 0;
+}
+
+// Online C compiler to run C program online
+
+//  Pascal Triangle using numbers
+#include <stdio.h>
+int main(){
+   int n =5;
+   for(int i=1;i<=n;i++){
+       for(int j=1;j<=n-i;j++){
+           printf(" ");
+       }
+       int x=1;
+       
+       for(int j=1;j<=i;j++){
+           printf("%d ", x);
+           x=x*(i-j)/j;
+          
+       }
+       printf("/n");
+   }
+     return 0;
+}
+
+
+// minimum and maximum of the array
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void find_small_large(int arr[],int n)
+{
+    int max;
+    int min;
+    min=arr[0];
+    max=arr[0];
+    for(int i=1;i<n;i++){
+        if(arr[i]>max)
+        max=arr[i];
+        if(arr[i]<min)
+        min-=arr[i];
+    }
+    printf("maximum: %d and minimum :%d\n",max,min);
+}
+
+int main(){
+    int arr[]={12,3,2,43,45};
+    int len=sizeof(arr)/sizeof(arr[0]);
+    find_small_large(arr,len);
+    return 0;
+    
+}
+
+
+// Online C compiler to run C program online
+
+// calculate the value of string
+#include <stdio.h>
+
+int main(){ 
+    
+    char s[] = "123456";
+    int ans = 0;
+    for(int i=0; s[i] != '\0'; i++){
+        int ele = s[i] - 48;
+        if(ele <= 9)
+        ans += ele;
+    }
+     printf("%d", ans);
+    return 0;
+    
+}
+
+
+// calculate the value of string
+#include <stdio.h>
+#include <string.h>
+int main(){ 
+    char str[1000];
+    printf("enter the string");
+    scanf("%s",str);
+    printf("length of str is %ld",strlen(str));
+    return 0;
+    
+}
+
+
+
