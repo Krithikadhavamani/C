@@ -223,5 +223,17 @@ int main(){
     
 }
 
+ calculate the value of string
+#include <stdio.h>
+#include <string.h>
+int main(){ 
+    char str[1000];
+    printf("enter the string");
+    scanf("%s",str);
+    printf("length of str is %ld",strlen(str));
+    return 0;
+    
+}
+
 
 
